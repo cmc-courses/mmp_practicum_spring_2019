@@ -170,8 +170,8 @@ def test_euclid():
     p1 = np.array([2, 14, 22, 23,  8, 17, 31, 11, 26,  3])
     p2 = np.array([31, 23, 30, 31, 11,  9])
     right_answer = (np.array([24,  8, 11]),
-                    np.array([1, 23, 14]),
-                    np.array([19, 14,  2, 21,  7, 12, 11]))
+                    np.array([ 1, 23, 14]),
+                    np.array([ 19, 14,  2, 21,  7, 12, 11]))
     max_deg = 2
     result = gf.euclid(p1, p2, pm, max_deg=max_deg)
     assert_equal(right_answer[0], result[0])
